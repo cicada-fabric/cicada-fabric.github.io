@@ -73,10 +73,12 @@ scripts/install-cicada-worker.sh --mode relay</code></pre>
         href="https://github.com/cicada-fabric/cicada/blob/dev/docs/permissions.md">permissions
         guide</a> for exact rules.</p>
       <h2>Versions, upgrades and evidence</h2>
-      <p>Current software is 0.1.0-dev, Hub schema 59, Client contract client-hub-v1.6.4, encrypted
+      <p>Current development software is 0.0.1-dev, Hub schema 59, Client contract client-hub-v1.6.4, encrypted
         wire 1 and catalog 55 operations. Architecture v2.3, Git revision, dirty build fingerprint,
         binary/image digest and native Runtime version identify different things.</p>
-      <p>In v0.1.x, x is an incrementing patch number: compatible fixes may move 0.1.0 to 0.1.1.
+      <p>Development stays in 0.0.x until the user's actual deployment and acceptance. A main
+        merge and initial 0.1.0 release require separate authorization. After that release,
+        in v0.1.x, x is an incrementing patch number: compatible fixes may move 0.1.0 to 0.1.1.
         Large product changes belong to v0.2.x. Documentation publication does not increment the
         software version or create a release.</p>
       <p>Back up Hub and Node state separately, stop relevant writers, verify archives and review
@@ -86,16 +88,19 @@ scripts/install-cicada-worker.sh --mode relay</code></pre>
         and <a
         href="https://github.com/cicada-fabric/cicada/blob/dev/docs/hub-restore-safe-activation.md">Hub
         safe activation</a> instructions.</p>
-      <p>Overall product acceptance remains partial. Latest real native G1/G2 paths are incomplete.
+      <p>Overall product acceptance remains partial. Real G1 passed its original Thread/context
+        scope; sandbox zero and Worker approval/result passed isolated fixture scopes. The
+        Worker fixture is separate from the shipping Node binary. G2 failed before model
+        activity; G3, current Android, physical-device and public HTTPS gates remain open.
         Deterministic tests, disposable Docker, browser, native Runtime, Android, physical-device
         and public HTTPS evidence are independent. SKIP, UNKNOWN, BLOCKED and NOT_RUN are not PASS.
         Read <a href="https://github.com/cicada-fabric/cicada/blob/dev/docs/status.md">current
         status</a> and <a
-        href="https://github.com/cicada-fabric/cicada/blob/dev/docs/v01-current-closeout-20261009-validation.md">closeout
+        href="https://github.com/cicada-fabric/cicada/blob/c25dc731b41631993184211b65c8d0df14144c7a/docs/v01-current-closeout-20261009-validation.md#current-20261010">Core c25dc731 closeout
         evidence</a> for actual sources and retained failures.</p>
     </main>
     <footer>
-      <p>0.1.0-dev · unreleased · product acceptance PARTIAL. First-party content: <a
+      <p>0.0.1-dev · unreleased · product acceptance PARTIAL. First-party content: <a
         href="LICENSE">Apache-2.0</a>.</p>
       <p>
       <a href="https://github.com/cicada-fabric/cicada/blob/dev/SECURITY.md">Security reporting</a>

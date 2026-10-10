@@ -11,6 +11,14 @@ separately. Preparing or pushing these files does not prove the site is live.
 No publishing workflow or product release is created here. First-party material
 is [Apache-2.0](LICENSE); third-party material retains its own terms.
 
+Current text follows Core documentation checkpoint
+[`c25dc731`](https://github.com/cicada-fabric/cicada/tree/c25dc731b41631993184211b65c8d0df14144c7a):
+development software 0.0.1-dev, with initial 0.1.0 publication pending the user's
+actual deployment/acceptance and separate authorization. The earlier site source
+`88ce9e770d55dbe4108ba39f7586fa4666975378` remains in Git history. This update
+changes current text and evidence links only, retaining the HTML structure,
+stylesheet, dependency-free implementation and historical source attribution.
+
 ## Configure GitHub Pages
 
 After the source is pushed, an authorized repository administrator can open
