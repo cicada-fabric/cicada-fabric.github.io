@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Overview · CICADA</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <p>CICADA technical documentation</p>
+      <nav aria-label="Main">
+        <a href="index.html">Overview</a>
+        <a href="guide.html">Technical guide</a>
+        <a href="https://github.com/cicada-fabric/cicada/tree/dev">Core source</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Authorized collaboration between native AI sessions</h1>
+      <p>CICADA is a Go system that keeps native session identity, scoped communication, durable
+        delivery and user approval separate from model-generated claims.</p>
+      <p>
+      <strong>Current status: 0.1.0-dev, unreleased; product acceptance PARTIAL.</strong> This site
+        documents the development candidate. It does not announce a release or qualify every
+        acceptance gate.</p>
+      <h2>Three deployment responsibilities</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Responsibility</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Node</td>
+            <td>Local native Thread access, Endpoint keys, durable inbox and writer state; outbound
+              Hub connections.</td>
+          </tr>
+          <tr>
+            <td>Hub</td>
+            <td>Authoritative state, Directory, Relay and Guard; Control manages user intents and
+              approvals.</td>
+          </tr>
+          <tr>
+            <td>Client</td>
+            <td>User identity, review and approval. Android implementation belongs to the
+              independent Client repository.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Logical participants are User, Control, Worker and optional Monitor. Network and Group are
+        authorization and collaboration objects, not extra deployment components. These
+        responsibilities need not occupy separate machines.</p>
+      <h2>Read the current technical documentation</h2>
+      <p>
+      <a href="guide.html">Start with the technical overview</a>, then use the <a
+        href="https://github.com/cicada-fabric/cicada/blob/dev/docs/v01-technical-guide.md">authoritative
+        v0.1.x guide</a> and <a
+        href="https://github.com/cicada-fabric/cicada/blob/dev/docs/README.md">documentation
+        index</a> for exact instructions, contracts and evidence.</p>
+      <h2>Future v0.2.x</h2>
+      <p>
+      <a
+        href="https://github.com/cicada-fabric/cicada/blob/dev/docs/v02-agent-collaboration-design.md">Agent
+        directory, local contacts and active organization</a> and the <a
+        href="https://github.com/cicada-fabric/cicada/blob/dev/docs/v02-openai-integration-roadmap.md">integration
+        roadmap</a> are design proposals. They are not implemented by publishing this
+        documentation.</p>
+    </main>
+    <footer>
+      <p>0.1.0-dev · unreleased · product acceptance PARTIAL. First-party content: <a
+        href="LICENSE">Apache-2.0</a>.</p>
+      <p>
+      <a href="https://github.com/cicada-fabric/cicada/blob/dev/SECURITY.md">Security reporting</a>
+        · <a
+        href="https://github.com/cicada-fabric/cicada/blob/dev/CONTRIBUTING.md">Contributing</a> ·
+        <a href="https://github.com/cicada-fabric/cicada-client">Android Client</a>
+      </p>
+    </footer>
+  </body>
+</html>
